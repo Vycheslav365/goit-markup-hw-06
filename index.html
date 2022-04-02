@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/main.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 				</a>
 				<nav class="top__line-nav">
 					<ul class="top__line-nav-ul">
-						<li class="top__line-nav-li nav__li-1">
+						<li class="top__line-nav-li nav__border">
 							<a href="./index.html">Студия</a>
 						</li>
 						<li class="top__line-nav-li">
@@ -264,45 +264,45 @@
 		<section class="client">
 			<div class="container">
 				<h2 class="client-title">Постоянные клиенты</h2>
-				<ul class="client-list">
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="41" height="46">
+				<ul class="client-ul">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="41" height="46">
 								<use href="images/symbol-defs.svg#icon-group"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="40" height="52">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="40" height="52">
 								<use href="images/symbol-defs.svg#icon-group-1"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="43" height="41">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="43" height="41">
 								<use href="images/symbol-defs.svg#icon-group-2"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="84" height="70">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="84" height="70">
 								<use href="images/symbol-defs.svg#icon-group-3"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="62" height="45">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="62" height="45">
 								<use href="images/symbol-defs.svg#icon-group-4"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="client-list-li">
-						<a href="" class="client-list-link">
-							<svg class="client-list-li-icon" widht="1" height="83">
+					<li class="client-li">
+						<a href="" class="client-link">
+							<svg class="client-li-icon" widht="1" height="83">
 								<use href="images/symbol-defs.svg#icon-group-5"></use>
 							</svg>
 						</a>
@@ -324,7 +324,7 @@
 				</address>
 				<section class="footer-social">
 					<h2>присоединяйтесь</h2>
-					<ul class="social-list">
+					<ul class="social-ul">
 						<li><a href="#" class="footer-social-icon footer-social-icon1"></a></li>
 						<li><a href="#" class="footer-social-icon footer-social-icon2"></a></li>
 						<li><a href="#" class="footer-social-icon footer-social-icon3"></a></li>
@@ -339,7 +339,7 @@
 							<use href="images/symbol-defs.svg#icon-send"></use>
 						</svg>
 					</button>
-				</form>
+				</form> 
 			</section>
 		</div>
 	</footer>
@@ -351,36 +351,41 @@
 				</svg>
 			</button>
 			<form class="modal-body">
-				<h2 class="modal-body-title">Оставьте свои данные, мы вам перезвоним</h2>
-				<label for="name" class="modal-body-label modal-body-label-name">Имя</label>
+				<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+				<label for="name" class="modal-label modal-label-name">Имя</label>
 				<div class="form-field1">
-					<input type="text" name="name" class="modal-body-input modal-body-input-name" id="name">
+					<input type="text" name="name" class="modal-input modal-input-name" id="name">
 					<svg class="modal-social-svg1">
 						<use href="images/symbol-defs.svg#icon-name"></use>
 					</svg>
 				</div>
-				<label for="name" class="modal-body-label modal-body-label-name">Телефон</label>
+				<label for="name" class="modal-label modal-label-name">Телефон</label>
 				<div class="form-field1">
-					<input type="tel" name="phone" class="modal-body-input modal-body-input-name" id="name">
+					<input type="tel" name="phone" class="modal-input modal-input-name" id="name">
 					<svg class="modal-social-svg1">
 						<use href="images/symbol-defs.svg#icon-tel"></use>
 					</svg>
 				</div>
-				<label for="name" class="modal-body-label modal-body-label-name">Почта</label>
+				<label for="name" class="modal-label modal-label-name">Почта</label>
 				<div class="form-field1">
-					<input type="email" name="email" class="modal-body-input modal-body-input-name" id="name">
+					<input type="email" name="email" class="modal-input modal-input-name" id="name">
 					<svg class="modal-social-svg1">
 						<use href="images/symbol-defs.svg#icon-mail"></use>
 					</svg>
 				</div>
 
-				<label for="text" class="modal-body-label modal-body-label-text">Комментарий</label>
-				<textarea name="text" placeholder="Введите текст" class="modal-body-input modal-body-input-text"
+				<label for="text" class="modal-label modal-label-text">Комментарий</label>
+				<textarea name="text" placeholder="Введите текст" class="modal-input modal-input-text"
 					id="text"></textarea>
-				<input type="checkbox" id="check" class="modal-body-checkbox">
-				<label for="check" class="modal-body-label-checkbox">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
-						договора</a></label>
-				<button type="submit" class="modal-body-bt">Отправить</button>
+				
+				<label for="check" class="modal-label-checkbox"><input type="checkbox" id="check" class="modal-checkbox">
+					<svg class="checkbox-icon" width="15" height="16">
+						<use href="images/symbol-defs.svg#icon-icon-check"></use>
+					</svg>
+					Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+						договора</a>
+				</label>
+				<button type="submit" class="modal-bt">Отправить</button>
 			</form>
 		</div>
 	</div>
