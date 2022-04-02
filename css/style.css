@@ -673,7 +673,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-bt {
 	position: relative;
-	padding: 12px 62px 12px 30px;
+	padding: 10px 62px 10px 30px;
 	font-size: 16px;
 	line-height: 2;
 	background: #2196F3;
@@ -687,13 +687,12 @@ border-radius: 4px;
 	top: 50%;
 	right: 28px;
 	transform: translateY(-50%);
-	fill: #fff;width: 24px;height: 22px;
+	fill: #fff;
 	text-align: center;
 }
 /* ========portfolio========= */
 .filters {
 	padding: 94px 0;
-
 }
 
 .filters-list {
