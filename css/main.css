@@ -787,18 +787,19 @@ a.footer__logo {
   right: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   background: url(../images/close.svg) 11px no-repeat;
   background-position: center;
-  -webkit-transition: fill 250ms linear, color 250ms linear;
-  transition: fill 250ms linear, color 250ms linear;
+  -webkit-transition: fill 250ms linear, color 250ms linear, border 550ms linear;
+  transition: fill 250ms linear, color 250ms linear, border 550ms linear;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover {
   fill: #2196F3;
+  border: 1px solid rgba(0, 0, 0, 0.09);
 }
 
 .modal-btn-close {
@@ -856,7 +857,7 @@ a.footer__logo {
   height: 120px;
   padding: 12px 16px;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
 }
 
@@ -947,5 +948,141 @@ a.footer__logo {
 
 .modal-input:focus + .modal-social-svg1 {
   fill: #2196F3;
+}
+
+.filters {
+  padding: 94px 0;
+}
+
+.filters-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 611px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters-element button {
+  padding: 6.3px 22px;
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  display: block;
+  background: #F5F4FA;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-transition: fill 250ms linear, color 250ms linear, background 250ms linear;
+  transition: fill 250ms linear, color 250ms linear, background 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-element button:hover, .filters-element button:focus {
+  cursor: pointer;
+  color: #fff;
+  background: #2196F3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.project h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.project-content {
+  margin: 0 30px 30px 0;
+  background: #fff;
+}
+
+.project-content:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.project-body {
+  display: block;
+  -webkit-transition: -webkit-box-shadow 250ms linear;
+  transition: -webkit-box-shadow 250ms linear;
+  transition: box-shadow 250ms linear;
+  transition: box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-body:hover, .project-body:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-body-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-content-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatey(110%);
+          transform: translatey(110%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.project-content :hover .project-content-title,
+.project-content :focus .project-content-title {
+  opacity: 1;
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+}
+
+.project-border {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+}
+
+.project-border p {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 4px;
+}
+
+.peculiarities-svg {
+  color: #000;
+  background: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
